@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        {{range $index, $element := .Mobil}}
+        <h1>{{$index}} - Mobil anda adalah {{$element}}</h1>
+        {{else}}
+        <h1>Anda tidak punya mobil</h1>
+        {{end}}
+    </body>
+</html>

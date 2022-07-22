@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{.Title}}</title>
+    </head>
+    <body>
+        {{if ge .NilaiAkhir 80}}
+        <h1>Good, You Passed!!</h1>
+        {{else if ge .NilaiAkhir 60}}
+        <h1>Congrats.. You Failed Exam..</h1>
+        {{else}}
+        <h1>Why you not studied before exam ?</h1>
+        {{end}}
+    </body>
+</html>
